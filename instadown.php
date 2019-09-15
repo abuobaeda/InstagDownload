@@ -27,7 +27,7 @@ function strBetStr($string) {
 }
 
 function downloadImg($img, $code, $count){
-	file_put_contents('photo/' . $code . ".jpg", file_get_contents($img));
+	file_put_contents('' . $code . ".jpg", file_get_contents($img));
 	echo $count . "- ". $code . ".jpg has download.\n";
 }
 
